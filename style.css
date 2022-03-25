@@ -1,7 +1,8 @@
-body{
+.contener{
   background: url("./barley-field-1684052.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 
 .contener__iner{
@@ -67,11 +68,50 @@ body{
 .intra{
   width: 800px;
   margin: 0 auto;
+  padding-top: 100px;
 }
 
 .intra__title{
   text-transform: uppercase;
-  color: rgb(202, 6, 202);
+  color: rgb(202, 140, 6);
   font-size: 100px;
   text-align: center ;
+  margin: 0 auto;
 }
+.intra__subtitle{
+  font-family: 'Kaushan Script', cursive;
+  color: blue ;
+  font-size: 40px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+ /* button */
+.intra__footer{
+  padding: 150px ;
+}
+
+.button{
+  text-transform: uppercase;
+  display: inline-block;
+  vertical-align: top;
+  color: brown;
+  padding: 10px 15px;
+  border: 3px solid;
+  margin: 0 auto;
+  border-width: 15;
+  transition: background .1s linear, color .1s linear;
+}
+.button:hover{
+  background-color: yellowgreen;
+  color: antiquewhite;
+}
+ /* main */
+
+ .main{
+   padding: 80px 0;
+   background-color: rgb(194, 202, 
+   188);
+   text-align: center;
+
+ }
