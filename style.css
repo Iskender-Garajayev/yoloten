@@ -2,6 +2,14 @@
   padding: 0;
   margin: 0;
 }
+
+body{
+
+  background:rgb(194, 202, 
+     188);
+}
+
+
 .contener{
   background: url("./barley-field-1684052.jpg");
   background-repeat: no-repeat;
@@ -113,22 +121,63 @@
  /* main */
 
  .main{
-   padding: 40px 0;
-   background-color: rgb(194, 202, 
-   188);
+   margin: auto;
+   width: 1000px;
    text-align: center;
+   padding: 40px 0;
+   /* align-items: center; */   
+ }
+
+ .main__subtitle{
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-size: 25px;
+ }
+
+ .main__title{
+   padding: 40px;
+   font-size: 30px;
+   text-transform: uppercase;
+ }
+
+ .main__title:after{
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: coral;
+  margin: 30px auto;
  }
 
  /* images */
 
  .main-image-section{
+   padding: 30px;
    display:flex;
-   /* width: 30%; */
-   justify-content: space-between 
+   justify-content: space-between;
+ }
+
+ .main__item{
+   width: 300px;
+ }
+
+ .main__item:hover .main__img{
+    transform: translate3d(-10px, -10px, 0);
+ }
+
+ .main__item:hover .main__img img{
+   opacity: .1;
  }
 
  .main__img{
-   display: flex;
-   width: 150px;
+   background: linear-gradient(to bottom, orange, green);
+   transition: transform .1s linear;
+  }
+
+ .main__img img{
+   display: block;
+   transition: opacity .1s linear;
  }
 
+ .footer{
+   text-align: center;
+ }
